@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/file.css">
+</head>
+<style>
+    .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/bg-pic.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+</style>
+<body>
+
+    <div class="hero-image" id="sec1">
+        <div class="hero-text">
+            <h1 style="font-size:50px;">I am Anushka Awasthi</h1>
+            <p>And I'm a Web Developer</p>
+            <button>Hire me</button>
+        </div>
+    </div>
+    <div class="navbar">
+        <a href="#sec1"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="#sec2"><i class="fa fa-fw fa-user"></i>About</a>
+        <a href="#info"> <i class="fa fa-fw fa-envelope"></i>Contact</a>
+    </div>
+    <div class="about_me" id="sec2">
+        <h1>My Name</h1>
+        <hr style="width: 200px;">
+        <div class="para">
+            <p>Hello Everyone,as you all are already aware of name (told earlier).So let me tell you more about me
+                as everyone have basic queries about people.I am a quick-learner and is currently focused on getting
+                better day by day in the skills that i am working on that is. HTML,CSS, Javascript ,Jquery and
+                one backend language Python.As i am a student currently so i have came across many languages and other
+                computer subjects to learn , understand and explore them.I have worked on few projects individual as
+                well as in group to gain more knowledge and experience.I will try to do best in my work always .
+            </p>
+        </div>
+        <h1>My skills</h1>
+        <hr style="width: 200px;">
+        <h2>CSS , HTML </h2>
+        <div class="container">
+            <div class="skills html">90%</div>
+        </div>
+        <h2>Javascript</h2>
+        <div class="container">
+            <div class="skills photoshop">75%%</div>
+        </div>
+        <h2>Python</h2>
+        <div class="container">
+            <div class="skills python">70%%</div>
+        </div>
+        <div class="banner">
+            <div class="details">
+                <h3>11+</h3>
+                <h3>Partners</h3>
+            </div>
+            <div class="details">
+                <h3>20+</h3>
+                <h3>Projects</h3>
+            </div>
+            <div class="details">
+                <h3> 30+</h3>
+                <h3>Happy Clients</h3>
+            </div>
+            <div class="details">
+                <h3>100+</h3>
+                <h3>Meetings</h3>
+            </div>
+        </div>
+        <button class="but" style="margin-top: 25px;"><i class="fa fa-download"></i> Download Resume</button>
+        <h1>My Projects</h1>
+        <hr style="width: 200px;">
+         <h2>Few of my projects are described here :</h2>
+        <button class="accordion">Project 1</button>
+        <div class="panel">
+          <h2>Library Management System</h2>
+          <h4>Overview :</h4>
+          <p style="margin: 0;">This project was made with the intention of making the process of issuing books , returning books easy for the staff of any college.</p>
+          <h3>Technologies Used : HTML,CSS,JavaScript,My Sql</h3>
+        </div>
+        
+        <button class="accordion">Project 2</button>
+        <div class="panel">
+            <h2>PG Life</h2>
+            <h4>Overview :</h4>
+          <p style="margin: 0;">I made this project with the view of searching PGs for students or people coming from different cities to live in different cities for studies, work etc. easy. The project focuses on finding the rooms around the area
+            where there work place is.
+          </p>
+          <h3>Technologies Used: HTML(hyper text markup language) , Css(cascading style sheets) , JavaScript , My Sql (Database)</h3>
+        </div>
+        
+        <button class="accordion">Project 3</button>
+        <div class="panel">
+            <h2>Architect Website</h2>
+            <h4>Overview :</h4>
+          <p style="margin:0;">This website was created to have a brief idea of what type of houses can the company built.The people working here , what type of experience do they hold and few basic queries can be solved by contacting the site dorectly.
+            It was my first web page that i built when i had just started to code . :)
+          </p>
+          <h3>Technologies Used : Html , Css</h3>
+        </div>
+        
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+    </div>
+    <div class="contact_me" id="info">
+        <h1>Contact Me</h1>
+        <hr style="width: 200px;">
+        <p>Let's get in touch.Send me a message</p>
+        <h2><i class="fa fa-phone" style="color: white;font-size: 30px;"></i> Phone:+004567 </h2>
+        <h2><i class="fa fa-envelope" style="color: white;font-size: 30px;"></i> Mail:abc@mail.com </h2>
+        <h2><i class="fa fa-map-marker" style="color: white;font-size: 30px;"></i> New Delhi,India</h2>
+        <form>
+            <input type="text" placeholder="Name"><br><br>
+            <input type="email" placeholder="Email"><br><br>
+            <input type="text" placeholder="Subject"><br><br>
+            <input type="text" placeholder="Message"><br><br>
+            <button class="but"><i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
+        </form>
+        <div class="symbols">
+            <i class="fa fa-facebook"></i> <i class="fa fa-instagram"></i> <i class="fa fa-pinterest"></i> <i
+                class="fa fa-linkedin"></i>
+        </div>
+    </div>
+    <div>
+        <footer>
+            <h2>Made with &#10084 by Anushka</h2>
+        </footer>
+    </div>
+</body>
+</html>
